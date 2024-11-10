@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+<head>
+    <meta charset="utf-8" />
+    <title>sonatype_nexus_install [Houseware Wiki]</title>
+    <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+    <meta name="generator" content="DokuWiki"/>
+<meta name="theme-color" content="#008800"/>
+<meta name="robots" content="index,follow"/>
+<meta name="keywords" content="sonatype_nexus_install"/>
+<link rel="search" type="application/opensearchdescription+xml" href="lib/exe/opensearch.html" title="Houseware Wiki"/>
+<link rel="start" href="sonatype_nexus_install.html"/>
+<link rel="contents" href="sonatype_nexus_install.html" title="Sitemap"/>
+<link rel="manifest" href="lib/exe/manifest.html"/>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" />
+<link rel="alternate" type="application/rss+xml" title="Current namespace" />
+<link rel="edit" title="Edit this page" href="sonatype_nexus_install.html"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="sonatype_nexus_install.html"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="sonatype_nexus_install.html"/>
+<link rel="canonical" href="http://dockerhost1:8080/doku.php?id=sonatype_nexus_install"/>
+<link rel="stylesheet" href="lib/exe/css.php.t.dokuwiki.css"/>
+<!--[if gte IE 9]><!-->
+<script >/*<![CDATA[*/var NS='';var SIG=" --- \/\/[[admin@localhost.net|admin]] 2024\/11\/10 15:25\/\/";var JSINFO = {"id":"sonatype_nexus_install","namespace":"","ACT":"show","useHeadingNavigation":0,"useHeadingContent":0};
+/*!]]>*/</script>
+<script src="lib/exe/jquery.php.t.dokuwiki.js" defer="defer">/*<![CDATA[*/
+/*!]]>*/</script>
+<script src="lib/exe/js.php.t.dokuwiki.js" defer="defer">/*<![CDATA[*/
+/*!]]>*/</script>
+<!--<![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="shortcut icon" href="lib/tpl/dokuwiki/images/favicon.ico" />
+<link rel="apple-touch-icon" href="lib/tpl/dokuwiki/images/apple-touch-icon.png" />
+    </head>
+
+<body>
+    <div id="dokuwiki__site"><div id="dokuwiki__top" class="site dokuwiki mode_show tpl_dokuwiki loggedIn    ">
+
+        
+<!-- ********** HEADER ********** -->
+<header id="dokuwiki__header"><div class="pad group">
+
+    
+    <div class="headings group">
+        <ul class="a11y skip">
+            <li><a href="#dokuwiki__content">skip to content</a></li>
+        </ul>
+
+        <h1 class="logo"><a href="start.html"  accesskey="h" title="Home [h]"><img src="lib/tpl/dokuwiki/images/logo.png" width="64" height="64" alt="" /><span>Houseware Wiki</span></a></h1>
+            </div>
+
+    <div class="tools group">
+        <!-- USER TOOLS -->
+                    <div id="dokuwiki__usertools">
+                <h3 class="a11y">User Tools</h3>
+                <ul>
+                    <li class="user">Logged in as: <bdi>admin</bdi> (<bdi>admin</bdi>)</li><li class="action profile"><a href="sonatype_nexus_install.html" title="Update Profile" rel="nofollow"><span>Update Profile</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M2 3h20c1.05 0 2 .95 2 2v14c0 1.05-.95 2-2 2H2c-1.05 0-2-.95-2-2V5c0-1.05.95-2 2-2m12 3v1h8V6h-8m0 2v1h8V8h-8m0 2v1h7v-1h-7m-6 3.91C6 13.91 2 15 2 17v1h12v-1c0-2-4-3.09-6-3.09M8 6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg></a></li><li class="action admin"><a href="sonatype_nexus_install.html" title="Admin" rel="nofollow"><span>Admin</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 15.5A3.5 3.5 0 0 1 8.5 12 3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97 0-.33-.03-.66-.07-1l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.31-.61-.22l-2.49 1c-.52-.39-1.06-.73-1.69-.98l-.37-2.65A.506.506 0 0 0 14 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.25-1.17.59-1.69.98l-2.49-1c-.22-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64L4.57 11c-.04.34-.07.67-.07 1 0 .33.03.65.07.97l-2.11 1.66c-.19.15-.25.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1.01c.52.4 1.06.74 1.69.99l.37 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.37-2.65c.63-.26 1.17-.59 1.69-.99l2.49 1.01c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.66z"/></svg></a></li><li class="action logout"><a href="sonatype_nexus_install.html" title="Log Out" rel="nofollow"><span>Log Out</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M17 17.25V14h-7v-4h7V6.75L22.25 12 17 17.25M13 2a2 2 0 0 1 2 2v4h-2V4H4v16h9v-4h2v4a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9z"/></svg></a></li>                </ul>
+            </div>
+        
+        <!-- SITE TOOLS -->
+        <div id="dokuwiki__sitetools">
+            <h3 class="a11y">Site Tools</h3>
+            <form action="start.html" method="get" role="search" class="search doku_form" id="dw__search" accept-charset="utf-8"><input type="hidden" name="do" value="search" /><input type="hidden" name="id" value="sonatype_nexus_install" /><div class="no"><input name="q" type="text" class="edit" title="[F]" accesskey="f" placeholder="Search" autocomplete="on" id="qsearch__in" value="" /><button value="1" type="submit" title="Search">Search</button><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>            <div class="mobileTools">
+                <form action="/doku.html.doku.php.html" method="get" accept-charset="utf-8"><div class="no"><input type="hidden" name="id" value="sonatype_nexus_install" /><input type="hidden" name="sectok" value="3ef7db4d244aa0322b3a54d1157b825e" /><select name="do" class="edit quickselect" title="Tools"><option value="">Tools</option><optgroup label="Page Tools"><option value="edit">Edit this page</option><option value="revisions">Old revisions</option><option value="siteexport_addpage">Export Page to HTML/PDF</option><option value="backlink">Backlinks</option></optgroup><optgroup label="Site Tools"><option value="recent">Recent Changes</option><option value="media">Media Manager</option><option value="index">Sitemap</option></optgroup><optgroup label="User Tools"><option value="profile">Update Profile</option><option value="admin">Admin</option><option value="logout">Log Out</option></optgroup></select><button type="submit">&gt;</button></div></form>            </div>
+            <ul>
+                <li class="action recent"><a href="sonatype_nexus_install.html" title="Recent Changes [r]" rel="nofollow" accesskey="r">Recent Changes</a></li><li class="action media"><a href="sonatype_nexus_install.html" title="Media Manager" rel="nofollow">Media Manager</a></li><li class="action index"><a href="sonatype_nexus_install.html" title="Sitemap [x]" rel="nofollow" accesskey="x">Sitemap</a></li>            </ul>
+        </div>
+
+    </div>
+
+    <!-- BREADCRUMBS -->
+            <div class="breadcrumbs">
+                                        <div class="trace"><span class="bchead">Trace:</span> <span class="bcsep">•</span> <span class="curid"><bdi><a href="sonatype_nexus_install.html"  class="breadcrumbs" title="sonatype_nexus_install">sonatype_nexus_install</a></bdi></span></div>
+                    </div>
+    
+    <hr class="a11y" />
+</div></header><!-- /header -->
+
+        <div class="wrapper group">
+
+            
+            <!-- ********** CONTENT ********** -->
+            <main id="dokuwiki__content"><div class="pad group">
+                
+                <div class="pageId"><span>sonatype_nexus_install</span></div>
+
+                <div class="page group">
+                                                            <!-- wikipage start -->
+                    
+<h4 id="sonatype_nexus">Sonatype Nexus</h4>
+<div class="level4">
+
+</div>
+
+<h5 id="community_download">Community Download</h5>
+<div class="level5">
+
+<p>
+<a href="https://www.sonatype.com/products/sonatype-nexus-oss-download#main-content" class="urlextern" title="https://www.sonatype.com/products/sonatype-nexus-oss-download#main-content" rel="ugc nofollow">https://www.sonatype.com/products/sonatype-nexus-oss-download#main-content</a>
+</p>
+
+<p>
+<a href="https://sonatype-download.global.ssl.fastly.net/repository/downloads-prod-group/3/nexus-3.73.0-12-unix.tar.gz" class="urlextern" title="https://sonatype-download.global.ssl.fastly.net/repository/downloads-prod-group/3/nexus-3.73.0-12-unix.tar.gz" rel="ugc nofollow">https://sonatype-download.global.ssl.fastly.net/repository/downloads-prod-group/3/nexus-3.73.0-12-unix.tar.gz</a>
+<a href="https://sonatype-download.global.ssl.fastly.net/repository/downloads-prod-group/3/nexus-3.73.0-12-win64.zip" class="urlextern" title="https://sonatype-download.global.ssl.fastly.net/repository/downloads-prod-group/3/nexus-3.73.0-12-win64.zip" rel="ugc nofollow">https://sonatype-download.global.ssl.fastly.net/repository/downloads-prod-group/3/nexus-3.73.0-12-win64.zip</a>
+<a href="https://sonatype-download.global.ssl.fastly.net/repository/downloads-prod-group/3/nexus-3.73.0-12-mac.tgz" class="urlextern" title="https://sonatype-download.global.ssl.fastly.net/repository/downloads-prod-group/3/nexus-3.73.0-12-mac.tgz" rel="ugc nofollow">https://sonatype-download.global.ssl.fastly.net/repository/downloads-prod-group/3/nexus-3.73.0-12-mac.tgz</a>
+</p>
+
+</div>
+
+<h5 id="install_from_tar">Install from tar</h5>
+<div class="level5">
+
+<p>
+<a href="https://medium.com/@dev.gyinae/how-to-install-nexus-repository-manager-on-linux-44c38a827502" class="urlextern" title="https://medium.com/@dev.gyinae/how-to-install-nexus-repository-manager-on-linux-44c38a827502" rel="ugc nofollow">https://medium.com/@dev.gyinae/how-to-install-nexus-repository-manager-on-linux-44c38a827502</a>
+</p>
+<pre class="code bash"><span class="co0"># As root</span>
+&nbsp;
+<span class="co0"># Needs java 1.8 to 17</span>
+dnf <span class="kw2">install</span> <span class="re5">-y</span> java-<span class="nu0">17</span>-openjdk java-<span class="nu0">17</span>-openjdk-headless java-<span class="nu0">17</span>-openjdk-devel
+&nbsp;
+<span class="co0"># Create nexus user</span>
+adduser <span class="re5">--no-create-home</span> nexus
+&nbsp;
+<span class="kw3">cd</span> <span class="sy0">/</span>opt
+curl <span class="re5">-O</span> https:<span class="sy0">//</span>sonatype-download.global.ssl.fastly.net<span class="sy0">/</span>repository<span class="sy0">/</span>downloads-prod-group<span class="sy0">/</span><span class="nu0">3</span><span class="sy0">/</span>nexus-3.73.0-<span class="nu0">12</span>-unix.tar.gz
+<span class="kw2">tar</span> <span class="re5">-xzvf</span> nexus-3.73.0-<span class="nu0">12</span>-unix.tar.gz
+<span class="kw2">ln</span> <span class="re5">-s</span> nexus-3.73.0-<span class="nu0">12</span> nexus
+&nbsp;
+<span class="kw2">mkdir</span> <span class="sy0">/</span>opt<span class="sy0">/</span>nexus-data
+<span class="kw2">chown</span> <span class="re5">-Rv</span> nexus:nexus <span class="sy0">/</span>opt<span class="sy0">/</span>nexus-3.73.0-<span class="nu0">12</span> <span class="sy0">/</span>opt<span class="sy0">/</span>nexus <span class="sy0">/</span>opt<span class="sy0">/</span>nexus-data<span class="sy0">/</span>
+&nbsp;
+<span class="co0"># nexus.rc</span>
+<span class="kw2">vi</span> <span class="sy0">/</span>opt<span class="sy0">/</span>nexus<span class="sy0">/</span>bin<span class="sy0">/</span>nexus.rc
+<span class="co0"># change run_as_user=&quot;nexus&quot;</span>
+&nbsp;
+<span class="co0"># Well that's the only setting in nexus.rc</span>
+<span class="kw2">mv</span> <span class="re5">-v</span> <span class="sy0">/</span>opt<span class="sy0">/</span>nexus<span class="sy0">/</span>bin<span class="sy0">/</span>nexus.rc <span class="sy0">/</span>opt<span class="sy0">/</span>nexus<span class="sy0">/</span>bin<span class="sy0">/</span>nexus.rc.orig
+<span class="kw2">cat</span> <span class="sy0">&gt;</span> <span class="sy0">/</span>opt<span class="sy0">/</span>nexus<span class="sy0">/</span>bin<span class="sy0">/</span>nexus.rc <span class="co2">&lt;&lt; EOF
+run_as_user=&quot;nexus&quot;
+EOF</span>
+<span class="kw2">chown</span> <span class="re5">-v</span> nexus:nexus <span class="sy0">/</span>opt<span class="sy0">/</span>nexus<span class="sy0">/</span>bin<span class="sy0">/</span>nexus.rc
+&nbsp;
+<span class="co0"># nexus.vmoptions</span>
+<span class="kw2">cp</span> <span class="re5">-vp</span> <span class="sy0">/</span>opt<span class="sy0">/</span>nexus<span class="sy0">/</span>bin<span class="sy0">/</span>nexus.vmoptions <span class="sy0">/</span>opt<span class="sy0">/</span>nexus<span class="sy0">/</span>bin<span class="sy0">/</span>nexus.vmoptions.orig
+<span class="kw2">vi</span> <span class="sy0">/</span>opt<span class="sy0">/</span>nexus<span class="sy0">/</span>bin<span class="sy0">/</span>nexus.vmoptions
+&nbsp;
+<span class="co0"># Nexus service pwd appears to be /opt/nexus.</span>
+<span class="co0"># Data directory defaults to ../sonatype-work.</span>
+<span class="co0"># WorkingDirectory in nexus.service doesn't change anything.</span>
+&nbsp;
+<span class="co0"># Add/change</span>
+<span class="co0">#-Xms1024m</span>
+<span class="co0">#-Xmx1024m</span>
+<span class="co0">#-XX:MaxDirectMemorySize=1024m</span>
+-XX:<span class="re2">LogFile</span>=<span class="sy0">/</span>opt<span class="sy0">/</span>nexus-data<span class="sy0">/</span>sonatype-work<span class="sy0">/</span>nexus3<span class="sy0">/</span>log<span class="sy0">/</span>jvm.log
+<span class="co0">#-XX:-OmitStackTraceInFastThrow</span>
+<span class="co0">#-Djava.net.preferIPv4Stack=true</span>
+<span class="co0">#-Dkaraf.home=.</span>
+<span class="co0">#-Dkaraf.base=.</span>
+<span class="co0">#-Dkaraf.etc=etc/karaf</span>
+<span class="co0">#-Djava.util.logging.config.file=/etc/karaf/java.util.logging.properties</span>
+-Dkaraf.data=<span class="sy0">/</span>opt<span class="sy0">/</span>nexus-data<span class="sy0">/</span>sonatype-work<span class="sy0">/</span>nexus3
+-Dkaraf.log=<span class="sy0">/</span>opt<span class="sy0">/</span>nexus-data<span class="sy0">/</span>sonatype-work<span class="sy0">/</span>nexus3<span class="sy0">/</span>log
+-Djava.io.tmpdir=<span class="sy0">/</span>opt<span class="sy0">/</span>nexus-data<span class="sy0">/</span>sonatype-work<span class="sy0">/</span>nexus3<span class="sy0">/</span>tmp
+&nbsp;
+<span class="co0"># nexus.service</span>
+<span class="kw2">cat</span> <span class="sy0">&gt;</span> <span class="sy0">/</span>etc<span class="sy0">/</span>systemd<span class="sy0">/</span>system<span class="sy0">/</span>nexus.service <span class="co2">&lt;&lt; EOF
+# nexus.service
+[Unit]
+Description=Nexus Service
+After=network.target
+&nbsp;
+[Service]
+Type=forking
+WorkingDirectory=/opt/nexus-data/
+LimitNOFILE=65536
+ExecStart=/opt/nexus/bin/nexus start
+ExecStop=/opt/nexus/bin/nexus stop
+User=nexus
+Restart=on-abort
+&nbsp;
+[Install]
+WantedBy=multi-user.target
+EOF</span>
+&nbsp;
+systemctl daemon-reload
+systemctl start nexus
+<span class="co0"># Runs on http://localhost:8081</span>
+<span class="kw2">cat</span> <span class="sy0">/</span>opt<span class="sy0">/</span>nexus-3.73.0-<span class="nu0">12</span><span class="sy0">/</span>sonatype-work<span class="sy0">/</span>nexus3<span class="sy0">/</span>admin.password
+<span class="kw2">cat</span> <span class="sy0">/</span>opt<span class="sy0">/</span>nexus-data<span class="sy0">/</span>sonatype-work<span class="sy0">/</span>nexus3<span class="sy0">/</span>admin.password</pre>
+
+</div>
+
+<h5 id="install_from_yum_repo">Install from yum repo</h5>
+<div class="level5">
+
+<p>
+<a href="https://github.com/sonatype-nexus-community/nexus-repository-installer" class="urlextern" title="https://github.com/sonatype-nexus-community/nexus-repository-installer" rel="ugc nofollow">https://github.com/sonatype-nexus-community/nexus-repository-installer</a>
+</p>
+<pre class="code bash"><span class="kw2">sudo</span> <span class="kw2">wget</span> <span class="re5">-P</span> <span class="sy0">/</span>etc<span class="sy0">/</span>yum.repos.d<span class="sy0">/</span> https:<span class="sy0">//</span>repo.sonatype.com<span class="sy0">/</span>repository<span class="sy0">/</span>community-hosted<span class="sy0">/</span>rpm<span class="sy0">/</span>sonatype-community.repo
+dnf <span class="kw2">install</span> <span class="re5">-y</span> nexus-repository-manager
+<span class="co0"># Errors saying gpg key in repo is not valid for nexus-repository-manager</span></pre>
+
+</div>
+
+<h5 id="nexus_configuration">Nexus configuration</h5>
+<div class="level5">
+
+</div>
+
+<h5 id="https">HTTPS</h5>
+<div class="level5">
+
+<p>
+Nexus doesn&#039;t make self signed certificates.
+Need to go through java keystore to add TLS certificates.
+</p>
+
+<p>
+Docs recommend using an HTTPS proxy.
+</p>
+
+</div>
+
+<h5 id="ldap">LDAP</h5>
+<div class="level5">
+
+<p>
+Add the ldap certificate and ???
+</p>
+
+</div>
+
+<h5 id="docker_repo">Docker repo</h5>
+<div class="level5">
+
+<p>
+Enable HTTPS connector on 58081 to allow pull/push to localhost:58081.
+</p>
+
+<p>
+The Allow anonymous docker pull ( Docker Bearer Token Realm required ) means to go to
+Security / Realms and add Docker Bearer Token Realm to active realms.
+</p>
+
+<p>
+Setup a Cleanup Policy for docker format to delete images older than x days.
+A cleanup unused docker image labels task is configured by default.
+</p>
+
+<p>
+Nexus path is not usable for docker.
+<a href="http://localhost:8081/repository/docker-repo1/" class="urlextern" title="http://localhost:8081/repository/docker-repo1/" rel="ugc nofollow">http://localhost:8081/repository/docker-repo1/</a>
+</p>
+
+</div>
+
+<h5 id="registryconf_example">registry.conf example</h5>
+<div class="level5">
+<pre class="code bash"><span class="kw2">cat</span> <span class="sy0">&gt;</span> <span class="sy0">/</span>etc<span class="sy0">/</span>containers<span class="sy0">/</span>registries.conf.d<span class="sy0">/</span>dockerhost1.conf <span class="co2">&lt;&lt; EOF
+location = &quot;dockerhost1.ioncollector.com&quot;
+insecure = true
+blocked = false
+EOF</span></pre>
+<pre class="code bash"><span class="co0"># Test</span>
+<span class="co0"># Authentication need for push</span>
+<span class="co0"># What's with not honoring insecure = true</span>
+podman <span class="kw2">login</span> <span class="re5">--tls-verify</span>=<span class="kw2">false</span> dockerrepo1.ioncollector.com:<span class="nu0">58081</span>
+podman pull quay.io<span class="sy0">/</span>podman<span class="sy0">/</span>hello
+podman tag quay.io<span class="sy0">/</span>podman<span class="sy0">/</span>hello:latest dockerrepo1.ioncollector.com:<span class="nu0">58081</span><span class="sy0">/</span>docker-repo1<span class="sy0">/</span>hello:latest
+podman push <span class="re5">--tls-verify</span>=<span class="kw2">false</span> dockerrepo1.ioncollector.com:<span class="nu0">58081</span><span class="sy0">/</span>docker-repo1<span class="sy0">/</span>hello:latest</pre>
+
+</div>
+
+<!-- no cachefile used, but created /app/www/public/data/cache/c/ca8dcfa9cce874080bced95639e31034.xhtml -->
+                    <!-- wikipage stop -->
+                                    </div>
+
+                <div class="docInfo"><bdi>sonatype_nexus_install.txt</bdi> · Last modified: 2024/11/03 17:16 by <bdi>admin</bdi></div>
+
+                
+                <hr class="a11y" />
+            </div></main><!-- /content -->
+
+            <!-- PAGE ACTIONS -->
+            <nav id="dokuwiki__pagetools" aria-labelledby="dokuwiki__pagetools__heading">
+                <h3 class="a11y" id="dokuwiki__pagetools__heading">Page Tools</h3>
+                <div class="tools">
+                    <ul>
+                        <li class="edit"><a href="sonatype_nexus_install.html" title="Edit this page [e]" rel="nofollow" accesskey="e"><span>Edit this page</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg></a></li><li class="revs"><a href="sonatype_nexus_install.html" title="Old revisions [o]" rel="nofollow" accesskey="o"><span>Old revisions</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M11 7v5.11l4.71 2.79.79-1.28-4-2.37V7m0-5C8.97 2 5.91 3.92 4.27 6.77L2 4.5V11h6.5L5.75 8.25C6.96 5.73 9.5 4 12.5 4a7.5 7.5 0 0 1 7.5 7.5 7.5 7.5 0 0 1-7.5 7.5c-3.27 0-6.03-2.09-7.06-5h-2.1c1.1 4.03 4.77 7 9.16 7 5.24 0 9.5-4.25 9.5-9.5A9.5 9.5 0 0 0 12.5 2z"/></svg></a></li><li class="backlink"><a href="sonatype_nexus_install.html" title="Backlinks" rel="nofollow"><span>Backlinks</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10.59 13.41c.41.39.41 1.03 0 1.42-.39.39-1.03.39-1.42 0a5.003 5.003 0 0 1 0-7.07l3.54-3.54a5.003 5.003 0 0 1 7.07 0 5.003 5.003 0 0 1 0 7.07l-1.49 1.49c.01-.82-.12-1.64-.4-2.42l.47-.48a2.982 2.982 0 0 0 0-4.24 2.982 2.982 0 0 0-4.24 0l-3.53 3.53a2.982 2.982 0 0 0 0 4.24m2.82-4.24c.39-.39 1.03-.39 1.42 0a5.003 5.003 0 0 1 0 7.07l-3.54 3.54a5.003 5.003 0 0 1-7.07 0 5.003 5.003 0 0 1 0-7.07l1.49-1.49c-.01.82.12 1.64.4 2.43l-.47.47a2.982 2.982 0 0 0 0 4.24 2.982 2.982 0 0 0 4.24 0l3.53-3.53a2.982 2.982 0 0 0 0-4.24.973.973 0 0 1 0-1.42z"/></svg></a></li><li class="siteexport_addpage"><a href="sonatype_nexus_install.html" title="Export Page to HTML/PDF" rel="nofollow"><span>Export Page to HTML/PDF</span><svg width="61px" height="51px" viewBox="0 0 61 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs></defs><path d="M26.1891503,39.0065635 L26.0876578,38.9773206 L60.6523866,1.23972885 L60.4321374,2.11844376 L60.476442,2.07071678 L60.4265202,2.14085429 L49.5024876,45.7237994 L32.8255882,40.9187101 L26,50.508302 L26,39.2103249 L26.1891503,39.0065635 Z M60.9727675,0.862917243 L22.2676619,38.2155059 L-0.00245042233,30.2214566 L60.9727675,0.862917243 Z" id="Paper-Plane"></path></svg></a></li><li class="top"><a href="#dokuwiki__top" title="Back to top [t]" rel="nofollow" accesskey="t"><span>Back to top</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg></a></li>                    </ul>
+                </div>
+            </nav>
+        </div><!-- /wrapper -->
+
+        
+<!-- ********** FOOTER ********** -->
+<footer id="dokuwiki__footer"><div class="pad">
+    
+    <div class="buttons">
+                <a href="https://www.dokuwiki.org/donate" title="Donate" ><img
+            src="lib/tpl/dokuwiki/images/button-donate.gif" width="80" height="15" alt="Donate" /></a>
+        <a href="https://php.net" title="Powered by PHP" ><img
+            src="lib/tpl/dokuwiki/images/button-php.gif" width="80" height="15" alt="Powered by PHP" /></a>
+        <a href="check/referer" title="Valid HTML5" ><img
+            src="lib/tpl/dokuwiki/images/button-html5.png" width="80" height="15" alt="Valid HTML5" /></a>
+        <a href="css-validator/check/referer.profile.css3?profile=css3" title="Valid CSS" ><img
+            src="lib/tpl/dokuwiki/images/button-css.png" width="80" height="15" alt="Valid CSS" /></a>
+        <a href="https://dokuwiki.org/" title="Driven by DokuWiki" ><img
+            src="lib/tpl/dokuwiki/images/button-dw.png" width="80" height="15"
+            alt="Driven by DokuWiki" /></a>
+    </div>
+
+    </div></footer><!-- /footer -->
+    </div></div><!-- /site -->
+
+    <div class="no"><img src="lib/exe/taskrunner.1731270320.gif?1731270320" width="2" height="1" alt="" /></div>
+    <div id="screen__mode" class="no"></div></body>
+</html>

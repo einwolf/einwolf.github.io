@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+<head>
+    <meta charset="utf-8" />
+    <title>minikube_commands [Houseware Wiki]</title>
+    <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+    <meta name="generator" content="DokuWiki"/>
+<meta name="theme-color" content="#008800"/>
+<meta name="robots" content="noindex,nofollow"/>
+<meta name="keywords" content="minikube_commands"/>
+<link rel="search" type="application/opensearchdescription+xml" href="lib/exe/opensearch.html" title="Houseware Wiki"/>
+<link rel="start" href="minikube_commands.html"/>
+<link rel="contents" href="minikube_commands.html" title="Sitemap"/>
+<link rel="manifest" href="lib/exe/manifest.html"/>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" />
+<link rel="alternate" type="application/rss+xml" title="Current namespace" />
+<link rel="edit" title="Edit this page" href="minikube_commands.html"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="minikube_commands.html"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="minikube_commands.html"/>
+<link rel="canonical" href="http://dockerhost1:8080/doku.php?id=minikube_commands"/>
+<link rel="stylesheet" href="lib/exe/css.php.t.dokuwiki.css"/>
+<!--[if gte IE 9]><!-->
+<script >/*<![CDATA[*/var NS='';var SIG=" --- \/\/[[admin@localhost.net|admin]] 2024\/11\/10 15:25\/\/";var JSINFO = {"id":"minikube_commands","namespace":"","ACT":"show","useHeadingNavigation":0,"useHeadingContent":0};
+/*!]]>*/</script>
+<script src="lib/exe/jquery.php.t.dokuwiki.js" defer="defer">/*<![CDATA[*/
+/*!]]>*/</script>
+<script src="lib/exe/js.php.t.dokuwiki.js" defer="defer">/*<![CDATA[*/
+/*!]]>*/</script>
+<!--<![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="shortcut icon" href="lib/tpl/dokuwiki/images/favicon.ico" />
+<link rel="apple-touch-icon" href="lib/tpl/dokuwiki/images/apple-touch-icon.png" />
+    </head>
+
+<body>
+    <div id="dokuwiki__site"><div id="dokuwiki__top" class="site dokuwiki mode_show tpl_dokuwiki loggedIn    ">
+
+        
+<!-- ********** HEADER ********** -->
+<header id="dokuwiki__header"><div class="pad group">
+
+    
+    <div class="headings group">
+        <ul class="a11y skip">
+            <li><a href="#dokuwiki__content">skip to content</a></li>
+        </ul>
+
+        <h1 class="logo"><a href="start.html"  accesskey="h" title="Home [h]"><img src="lib/tpl/dokuwiki/images/logo.png" width="64" height="64" alt="" /><span>Houseware Wiki</span></a></h1>
+            </div>
+
+    <div class="tools group">
+        <!-- USER TOOLS -->
+                    <div id="dokuwiki__usertools">
+                <h3 class="a11y">User Tools</h3>
+                <ul>
+                    <li class="user">Logged in as: <bdi>admin</bdi> (<bdi>admin</bdi>)</li><li class="action profile"><a href="minikube_commands.html" title="Update Profile" rel="nofollow"><span>Update Profile</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M2 3h20c1.05 0 2 .95 2 2v14c0 1.05-.95 2-2 2H2c-1.05 0-2-.95-2-2V5c0-1.05.95-2 2-2m12 3v1h8V6h-8m0 2v1h8V8h-8m0 2v1h7v-1h-7m-6 3.91C6 13.91 2 15 2 17v1h12v-1c0-2-4-3.09-6-3.09M8 6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg></a></li><li class="action admin"><a href="minikube_commands.html" title="Admin" rel="nofollow"><span>Admin</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 15.5A3.5 3.5 0 0 1 8.5 12 3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97 0-.33-.03-.66-.07-1l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.31-.61-.22l-2.49 1c-.52-.39-1.06-.73-1.69-.98l-.37-2.65A.506.506 0 0 0 14 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.25-1.17.59-1.69.98l-2.49-1c-.22-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64L4.57 11c-.04.34-.07.67-.07 1 0 .33.03.65.07.97l-2.11 1.66c-.19.15-.25.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1.01c.52.4 1.06.74 1.69.99l.37 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.37-2.65c.63-.26 1.17-.59 1.69-.99l2.49 1.01c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.66z"/></svg></a></li><li class="action logout"><a href="minikube_commands.html" title="Log Out" rel="nofollow"><span>Log Out</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M17 17.25V14h-7v-4h7V6.75L22.25 12 17 17.25M13 2a2 2 0 0 1 2 2v4h-2V4H4v16h9v-4h2v4a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9z"/></svg></a></li>                </ul>
+            </div>
+        
+        <!-- SITE TOOLS -->
+        <div id="dokuwiki__sitetools">
+            <h3 class="a11y">Site Tools</h3>
+            <form action="start.html" method="get" role="search" class="search doku_form" id="dw__search" accept-charset="utf-8"><input type="hidden" name="do" value="search" /><input type="hidden" name="id" value="minikube_commands" /><div class="no"><input name="q" type="text" class="edit" title="[F]" accesskey="f" placeholder="Search" autocomplete="on" id="qsearch__in" value="" /><button value="1" type="submit" title="Search">Search</button><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>            <div class="mobileTools">
+                <form action="/doku.html.doku.php.html" method="get" accept-charset="utf-8"><div class="no"><input type="hidden" name="id" value="minikube_commands" /><input type="hidden" name="sectok" value="8e7f4c7946fcd68a5a2edb85084dfe91" /><select name="do" class="edit quickselect" title="Tools"><option value="">Tools</option><optgroup label="Page Tools"><option value="edit">Edit this page</option><option value="revisions">Old revisions</option><option value="siteexport_addpage">Export Page to HTML/PDF</option><option value="backlink">Backlinks</option></optgroup><optgroup label="Site Tools"><option value="recent">Recent Changes</option><option value="media">Media Manager</option><option value="index">Sitemap</option></optgroup><optgroup label="User Tools"><option value="profile">Update Profile</option><option value="admin">Admin</option><option value="logout">Log Out</option></optgroup></select><button type="submit">&gt;</button></div></form>            </div>
+            <ul>
+                <li class="action recent"><a href="minikube_commands.html" title="Recent Changes [r]" rel="nofollow" accesskey="r">Recent Changes</a></li><li class="action media"><a href="minikube_commands.html" title="Media Manager" rel="nofollow">Media Manager</a></li><li class="action index"><a href="minikube_commands.html" title="Sitemap [x]" rel="nofollow" accesskey="x">Sitemap</a></li>            </ul>
+        </div>
+
+    </div>
+
+    <!-- BREADCRUMBS -->
+            <div class="breadcrumbs">
+                                        <div class="trace"><span class="bchead">Trace:</span> <span class="bcsep">•</span> <span class="curid"><bdi><a href="minikube_commands.html"  class="breadcrumbs" title="minikube_commands">minikube_commands</a></bdi></span></div>
+                    </div>
+    
+    <hr class="a11y" />
+</div></header><!-- /header -->
+
+        <div class="wrapper group">
+
+            
+            <!-- ********** CONTENT ********** -->
+            <main id="dokuwiki__content"><div class="pad group">
+                
+                <div class="pageId"><span>minikube_commands</span></div>
+
+                <div class="page group">
+                                                            <!-- wikipage start -->
+                    <!-- TOC START -->
+<div id="dw__toc" class="dw__toc">
+<h3 class="toggle">Table of Contents</h3>
+<div>
+
+<ul class="toc">
+<li class="level2"><div class="li"><a href="#minikube_arguments">Minikube arguments</a></div></li>
+<li class="level2"><div class="li"><a href="#minikube_start">Minikube start</a></div></li>
+<li class="level2"><div class="li"><a href="#minikube_ssh">Minikube ssh</a></div></li>
+<li class="level2"><div class="li"><a href="#kubectl_in_minikube">kubectl in minikube</a></div></li>
+<li class="level2"><div class="li"><a href="#container_images">Container Images</a></div></li>
+<li class="level2"><div class="li"><a href="#ip">IP</a></div></li>
+<li class="level2"><div class="li"><a href="#echoserver_test">Echoserver Test</a></div></li>
+</ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1" id="minikube_arguments">Minikube arguments</h2>
+<div class="level2">
+
+<p>
+Equals sign in options=arg format is required. Didn&#039;t test the quotes around options yet.
+</p>
+<dl class="file">
+<dt><a href="minikube_commands.html" title="Download Snippet" class="mediafile mf_bash">snippet.bash</a></dt>
+<dd><pre class="code file bash">minikube start <span class="re5">--cpus</span>=<span class="nu0">2</span> <span class="re5">--memory</span>=8g <span class="re5">--disk-size</span>=20g <span class="re5">--addons</span>=<span class="br0">&#91;</span>dashboard,metrics-server,registry<span class="br0">&#93;</span> <span class="re5">--insecure-registry</span>=192.168.39.0<span class="sy0">/</span><span class="nu0">24</span></pre>
+</dd></dl>
+
+</div>
+<div class="secedit editbutton_section editbutton_1"><form class="button btn_secedit" method="post" action="/doku.html.doku.php.html"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="1731190333" /><input type="hidden" name="summary" value="[Minikube arguments] " /><input type="hidden" name="target" value="section" /><input type="hidden" name="hid" value="minikube_arguments" /><input type="hidden" name="codeblockOffset" value="0" /><input type="hidden" name="range" value="0-259" /><input type="hidden" name="id" value="minikube_commands" /><button type="submit" title="Minikube arguments">Edit</button></div></form></div>
+<h2 class="sectionedit2" id="minikube_start">Minikube start</h2>
+<div class="level2">
+<dl class="file">
+<dt><a href="minikube_commands.codeblock.1.html" title="Download Snippet" class="mediafile mf_bash">snippet.bash</a></dt>
+<dd><pre class="code file bash">minikube start
+<span class="re5">--interactive</span>=<span class="kw2">true</span>
+<span class="re5">--driver</span>=kvm2
+<span class="re5">--download-only</span>
+<span class="re5">--cpus</span>=<span class="st_h">'2'</span>
+<span class="re5">--memory</span>=<span class="st_h">'6g'</span>
+<span class="re5">--disk-size</span>=<span class="st_h">'20000mb'</span>
+<span class="re5">--addons</span>=<span class="br0">&#91;</span><span class="br0">&#93;</span>
+<span class="re5">--insecure-registry</span>=<span class="br0">&#91;</span><span class="br0">&#93;</span>
+<span class="re5">--extra-disks</span>=<span class="nu0">0</span>
+<span class="re5">--kvm-gpu</span>=<span class="kw2">true</span>
+<span class="re5">--kvm-hidden</span>=<span class="kw2">true</span>
+<span class="re5">--kvm-network</span>=<span class="st_h">'default'</span></pre>
+</dd></dl>
+<dl class="file">
+<dt><a href="minikube_commands.codeblock.2.html" title="Download Snippet" class="mediafile mf_bash">snippet.bash</a></dt>
+<dd><pre class="code file bash"><span class="co0"># more</span>
+<span class="re5">--network</span>=<span class="st_h">''</span>          <span class="co0"># Attach to bridge instead of kvm default nat?</span>
+<span class="re5">--image-repository</span>=<span class="st_h">''</span> <span class="co0"># Local image repo?</span>
+<span class="re5">--iso-url</span>=<span class="br0">&#91;</span><span class="br0">&#93;</span></pre>
+</dd></dl>
+
+</div>
+<div class="secedit editbutton_section editbutton_2"><form class="button btn_secedit" method="post" action="/doku.html.doku.php.html"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="1731190333" /><input type="hidden" name="summary" value="[Minikube start] " /><input type="hidden" name="target" value="section" /><input type="hidden" name="hid" value="minikube_start" /><input type="hidden" name="codeblockOffset" value="1" /><input type="hidden" name="range" value="260-654" /><input type="hidden" name="id" value="minikube_commands" /><button type="submit" title="Minikube start">Edit</button></div></form></div>
+<h2 class="sectionedit3" id="minikube_ssh">Minikube ssh</h2>
+<div class="level2">
+
+<p>
+Information is in <code>~/.minikube/machines/minikube/config.json</code>.
+</p>
+<dl class="file">
+<dt><a href="minikube_commands.codeblock.3.html" title="Download Snippet" class="mediafile mf_bash">snippet.bash</a></dt>
+<dd><pre class="code file bash">minikube <span class="kw2">ssh</span>
+<span class="co0"># or</span>
+<span class="kw2">ssh</span> <span class="re5">-i</span> ~<span class="sy0">/</span>.minikube<span class="sy0">/</span>machines<span class="sy0">/</span>minikube<span class="sy0">/</span>id_rsa docker<span class="sy0">@</span>$<span class="br0">&#40;</span>minikube <span class="kw2">ip</span><span class="br0">&#41;</span></pre>
+</dd></dl>
+
+</div>
+<div class="secedit editbutton_section editbutton_3"><form class="button btn_secedit" method="post" action="/doku.html.doku.php.html"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="1731190333" /><input type="hidden" name="summary" value="[Minikube ssh] " /><input type="hidden" name="target" value="section" /><input type="hidden" name="hid" value="minikube_ssh" /><input type="hidden" name="codeblockOffset" value="3" /><input type="hidden" name="range" value="655-832" /><input type="hidden" name="id" value="minikube_commands" /><button type="submit" title="Minikube ssh">Edit</button></div></form></div>
+<h2 class="sectionedit4" id="kubectl_in_minikube">kubectl in minikube</h2>
+<div class="level2">
+
+<p>
+kubectl is stored in the cache or used through minikube command line.
+</p>
+<dl class="file">
+<dt><a href="minikube_commands.codeblock.4.html" title="Download Snippet" class="mediafile mf_bash">snippet.bash</a></dt>
+<dd><pre class="code file bash">~<span class="sy0">/</span>.minikube<span class="sy0">/</span>cache<span class="sy0">/</span>linux<span class="sy0">/</span>v1.23.1<span class="sy0">/</span>kubectl version
+minikube kubectl version</pre>
+</dd></dl>
+
+</div>
+<div class="secedit editbutton_section editbutton_4"><form class="button btn_secedit" method="post" action="/doku.html.doku.php.html"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="1731190333" /><input type="hidden" name="summary" value="[kubectl in minikube] " /><input type="hidden" name="target" value="section" /><input type="hidden" name="hid" value="kubectl_in_minikube" /><input type="hidden" name="codeblockOffset" value="4" /><input type="hidden" name="range" value="833-1013" /><input type="hidden" name="id" value="minikube_commands" /><button type="submit" title="kubectl in minikube">Edit</button></div></form></div>
+<h2 class="sectionedit5" id="container_images">Container Images</h2>
+<div class="level2">
+
+<p>
+Minikube uses docker internally. The image cache comes from docker.
+</p>
+<dl class="file">
+<dt><a href="minikube_commands.codeblock.5.html" title="Download Snippet" class="mediafile mf_bash">snippet.bash</a></dt>
+<dd><pre class="code file bash">$ docker image <span class="kw2">ls</span>
+registry.access.redhat.com<span class="sy0">/</span>ubi8<span class="sy0">/</span>ubi            latest    b81e86a2cb9a   <span class="nu0">2</span> weeks ago     216MB
+k8s.gcr.io<span class="sy0">/</span>kube-apiserver                      v1.23.1   b6d7abedde39   <span class="nu0">8</span> weeks ago     135MB
+k8s.gcr.io<span class="sy0">/</span>kube-proxy                          v1.23.1   b46c42588d51   <span class="nu0">8</span> weeks ago     112MB
+k8s.gcr.io<span class="sy0">/</span>kube-scheduler                      v1.23.1   71d575efe628   <span class="nu0">8</span> weeks ago     53.5MB
+k8s.gcr.io<span class="sy0">/</span>kube-controller-manager             v1.23.1   f51846a4fd28   <span class="nu0">8</span> weeks ago     125MB
+k8s.gcr.io<span class="sy0">/</span>etcd                                3.5.1-<span class="nu0">0</span>   25f8c7f3da61   <span class="nu0">3</span> months ago    293MB
+k8s.gcr.io<span class="sy0">/</span>coredns<span class="sy0">/</span>coredns                     v1.8.6    a4ca41631cc7   <span class="nu0">4</span> months ago    46.8MB
+k8s.gcr.io<span class="sy0">/</span>pause                               <span class="nu0">3.6</span>       6270bb605e12   <span class="nu0">5</span> months ago    683kB
+kubernetesui<span class="sy0">/</span>dashboard                         v2.3.1    e1482a24335a   <span class="nu0">8</span> months ago    220MB
+kubernetesui<span class="sy0">/</span>metrics-scraper                   v1.0.7    7801cfc6d5c0   <span class="nu0">8</span> months ago    34.4MB
+gcr.io<span class="sy0">/</span>k8s-minikube<span class="sy0">/</span>storage-provisioner        v5        6e38f40d628d   <span class="nu0">10</span> months ago   31.5MB
+k8s.gcr.io<span class="sy0">/</span>metrics-server<span class="sy0">/</span>metrics-server       <span class="sy0">&lt;</span>none<span class="sy0">&gt;</span>    17c225a562d9   <span class="nu0">12</span> months ago   60.5MB
+registry                                       <span class="sy0">&lt;</span>none<span class="sy0">&gt;</span>    678dfa38fcfa   <span class="nu0">14</span> months ago   26.2MB
+gcr.io<span class="sy0">/</span>google_containers<span class="sy0">/</span>kube-registry-proxy   <span class="sy0">&lt;</span>none<span class="sy0">&gt;</span>    60dc18151daf   <span class="nu0">5</span> years ago     188MB</pre>
+</dd></dl>
+<dl class="file">
+<dt><a href="minikube_commands.codeblock.6.html" title="Download Snippet" class="mediafile mf_bash">snippet.bash</a></dt>
+<dd><pre class="code file bash"><span class="co0"># cri-o uses crictl</span>
+<span class="co0"># Most of these don't take arguments</span>
+crictl images
+crictl pods <span class="co0"># list containers</span>
+<span class="co0"># Doesn't seem to take container name</span>
+crictl <span class="kw3">exec</span> <span class="re5">-it</span> 808b229f5beaa <span class="sy0">/</span>bin<span class="sy0">/</span><span class="kw2">bash</span></pre>
+</dd></dl>
+
+</div>
+<div class="secedit editbutton_section editbutton_5"><form class="button btn_secedit" method="post" action="/doku.html.doku.php.html"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="1731190333" /><input type="hidden" name="summary" value="[Container Images] " /><input type="hidden" name="target" value="section" /><input type="hidden" name="hid" value="container_images" /><input type="hidden" name="codeblockOffset" value="5" /><input type="hidden" name="range" value="1014-2648" /><input type="hidden" name="id" value="minikube_commands" /><button type="submit" title="Container Images">Edit</button></div></form></div>
+<h2 class="sectionedit6" id="ip">IP</h2>
+<div class="level2">
+
+<p>
+Minikube attaches to KVM “default” NAT network.
+</p>
+
+<p>
+Minikube uses an isolated 192.168.39.0/24 as its network. See minikube ip command for vm ip.
+</p>
+<dl class="file">
+<dt><a href="minikube_commands.codeblock.7.html" title="Download Snippet" class="mediafile mf_bash">snippet.bash</a></dt>
+<dd><pre class="code file bash"><span class="co0"># Set insecure registry setting at start. Must use minikube delete to change.</span>
+minikube start <span class="re5">--insecure-registry</span> <span class="st0">&quot;192.168.39.0/24&quot;</span></pre>
+</dd></dl>
+
+</div>
+<div class="secedit editbutton_section editbutton_6"><form class="button btn_secedit" method="post" action="/doku.html.doku.php.html"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="1731190333" /><input type="hidden" name="summary" value="[IP] " /><input type="hidden" name="target" value="section" /><input type="hidden" name="hid" value="ip" /><input type="hidden" name="codeblockOffset" value="7" /><input type="hidden" name="range" value="2649-2942" /><input type="hidden" name="id" value="minikube_commands" /><button type="submit" title="IP">Edit</button></div></form></div>
+<h2 class="sectionedit7" id="echoserver_test">Echoserver Test</h2>
+<div class="level2">
+
+<p>
+Echoserver runs on port 8080.
+</p>
+
+<p>
+podman run –rm -it -p 8080:8080 -p 8443:8443 gcr.io/google-containers/echoserver:1.10
+</p>
+
+</div>
+<div class="secedit editbutton_section editbutton_7"><form class="button btn_secedit" method="post" action="/doku.html.doku.php.html"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="1731190333" /><input type="hidden" name="summary" value="[Echoserver Test] " /><input type="hidden" name="target" value="section" /><input type="hidden" name="hid" value="echoserver_test" /><input type="hidden" name="codeblockOffset" value="8" /><input type="hidden" name="range" value="2943-" /><input type="hidden" name="id" value="minikube_commands" /><button type="submit" title="Echoserver Test">Edit</button></div></form></div>
+<!-- no cachefile used, but created /app/www/public/data/cache/8/840595713d1e5f316d7d95cfa8a51909.xhtml -->
+                    <!-- wikipage stop -->
+                                    </div>
+
+                <div class="docInfo"><bdi>minikube_commands.txt</bdi> · Last modified: 2024/11/09 17:12 by <bdi>admin</bdi></div>
+
+                
+                <hr class="a11y" />
+            </div></main><!-- /content -->
+
+            <!-- PAGE ACTIONS -->
+            <nav id="dokuwiki__pagetools" aria-labelledby="dokuwiki__pagetools__heading">
+                <h3 class="a11y" id="dokuwiki__pagetools__heading">Page Tools</h3>
+                <div class="tools">
+                    <ul>
+                        <li class="edit"><a href="minikube_commands.html" title="Edit this page [e]" rel="nofollow" accesskey="e"><span>Edit this page</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg></a></li><li class="revs"><a href="minikube_commands.html" title="Old revisions [o]" rel="nofollow" accesskey="o"><span>Old revisions</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M11 7v5.11l4.71 2.79.79-1.28-4-2.37V7m0-5C8.97 2 5.91 3.92 4.27 6.77L2 4.5V11h6.5L5.75 8.25C6.96 5.73 9.5 4 12.5 4a7.5 7.5 0 0 1 7.5 7.5 7.5 7.5 0 0 1-7.5 7.5c-3.27 0-6.03-2.09-7.06-5h-2.1c1.1 4.03 4.77 7 9.16 7 5.24 0 9.5-4.25 9.5-9.5A9.5 9.5 0 0 0 12.5 2z"/></svg></a></li><li class="backlink"><a href="minikube_commands.html" title="Backlinks" rel="nofollow"><span>Backlinks</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10.59 13.41c.41.39.41 1.03 0 1.42-.39.39-1.03.39-1.42 0a5.003 5.003 0 0 1 0-7.07l3.54-3.54a5.003 5.003 0 0 1 7.07 0 5.003 5.003 0 0 1 0 7.07l-1.49 1.49c.01-.82-.12-1.64-.4-2.42l.47-.48a2.982 2.982 0 0 0 0-4.24 2.982 2.982 0 0 0-4.24 0l-3.53 3.53a2.982 2.982 0 0 0 0 4.24m2.82-4.24c.39-.39 1.03-.39 1.42 0a5.003 5.003 0 0 1 0 7.07l-3.54 3.54a5.003 5.003 0 0 1-7.07 0 5.003 5.003 0 0 1 0-7.07l1.49-1.49c-.01.82.12 1.64.4 2.43l-.47.47a2.982 2.982 0 0 0 0 4.24 2.982 2.982 0 0 0 4.24 0l3.53-3.53a2.982 2.982 0 0 0 0-4.24.973.973 0 0 1 0-1.42z"/></svg></a></li><li class="siteexport_addpage"><a href="minikube_commands.html" title="Export Page to HTML/PDF" rel="nofollow"><span>Export Page to HTML/PDF</span><svg width="61px" height="51px" viewBox="0 0 61 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs></defs><path d="M26.1891503,39.0065635 L26.0876578,38.9773206 L60.6523866,1.23972885 L60.4321374,2.11844376 L60.476442,2.07071678 L60.4265202,2.14085429 L49.5024876,45.7237994 L32.8255882,40.9187101 L26,50.508302 L26,39.2103249 L26.1891503,39.0065635 Z M60.9727675,0.862917243 L22.2676619,38.2155059 L-0.00245042233,30.2214566 L60.9727675,0.862917243 Z" id="Paper-Plane"></path></svg></a></li><li class="top"><a href="#dokuwiki__top" title="Back to top [t]" rel="nofollow" accesskey="t"><span>Back to top</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg></a></li>                    </ul>
+                </div>
+            </nav>
+        </div><!-- /wrapper -->
+
+        
+<!-- ********** FOOTER ********** -->
+<footer id="dokuwiki__footer"><div class="pad">
+    
+    <div class="buttons">
+                <a href="https://www.dokuwiki.org/donate" title="Donate" ><img
+            src="lib/tpl/dokuwiki/images/button-donate.gif" width="80" height="15" alt="Donate" /></a>
+        <a href="https://php.net" title="Powered by PHP" ><img
+            src="lib/tpl/dokuwiki/images/button-php.gif" width="80" height="15" alt="Powered by PHP" /></a>
+        <a href="check/referer" title="Valid HTML5" ><img
+            src="lib/tpl/dokuwiki/images/button-html5.png" width="80" height="15" alt="Valid HTML5" /></a>
+        <a href="css-validator/check/referer.profile.css3?profile=css3" title="Valid CSS" ><img
+            src="lib/tpl/dokuwiki/images/button-css.png" width="80" height="15" alt="Valid CSS" /></a>
+        <a href="https://dokuwiki.org/" title="Driven by DokuWiki" ><img
+            src="lib/tpl/dokuwiki/images/button-dw.png" width="80" height="15"
+            alt="Driven by DokuWiki" /></a>
+    </div>
+
+    </div></footer><!-- /footer -->
+    </div></div><!-- /site -->
+
+    <div class="no"><img src="lib/exe/taskrunner.1731270313.gif?1731270313" width="2" height="1" alt="" /></div>
+    <div id="screen__mode" class="no"></div></body>
+</html>
